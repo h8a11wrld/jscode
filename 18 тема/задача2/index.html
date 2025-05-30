@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Bar</title>
+  <style>
+    /* Стили для контейнера прогресс-бара */
+    #progress-container {
+      width: 500px;
+      height: 20px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    /* Прогресс-бар */
+    #progress-bar {
+      height: 100%;
+      width: 0;
+      background-color: #4caf50;
+      transform-origin: left; /* Для использования scaleX */
+      transition: transform 0s linear;
+    }
+
+    /* Таймер */
+    #timer {
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Анимация Progress Bar</h1>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <div id="timer">Прошло секунд: 0</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
