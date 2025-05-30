@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gift-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .gift-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .close-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #0056b3;
+  }
