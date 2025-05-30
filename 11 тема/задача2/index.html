@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Калькуляция доставки</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Калькуляция стоимости доставки</h1>
+    <form id="delivery-form">
+      <div class="form-group">
+        <label for="product-name">Название товара:</label>
+        <input type="text" id="product-name" name="product-name" required>
+        <span class="error" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="product-weight">Вес товара (кг):</label>
+        <input type="number" id="product-weight" name="product-weight" min="0.1" step="0.1" required>
+        <span class="error" id="weight-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="delivery-distance">Расстояние доставки (км):</label>
+        <input type="number" id="delivery-distance" name="delivery-distance" min="1" step="1" required>
+        <span class="error" id="distance-error"></span>
+      </div>
+
+      <button type="submit" id="add-product-button">Добавить товар</button>
+    </form>
+
+    <h2>Список товаров</h2>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Название товара</th>
+          <th>Вес (кг)</th>
+          <th>Расстояние (км)</th>
+          <th>Стоимость доставки</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <!-- Здесь будут добавляться товары -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
